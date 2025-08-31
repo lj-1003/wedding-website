@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+#logobox {
+	display: flex;
+	height: auto;
+	width: auto;
+	justify-content: center;
+}
+
+.logo {
+	height: 300px;
+	width: auto;
+}
+/* NAVIGATION -----------------------*/
+#navigation {
+	font-family: "Libre Baskerville", serif;
+	font-size: 150%;
+	font-weight: bold;
+	text-align: left;
+}
+	
+#navigation a {
+	text-decoration: none;
+}
+	
+#navigation ul {
+	display: flex;
+	list-style: none;
+	white-space: nowrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 2.5%;
+}
+
+#navigation a:link {
+	color: #000000;
+}
+
+#navigation a:visited {
+	color: #000000;
+}
+	
+#navigation a:hover {
+	color: #FA8072;
+	transition: color .5s ease-out;
+}
+/* MAIN -----------------------*/
+main {
+	display: flex;
+	justify-content: center;
+	font-family: helvetica;
+}
+/* PHOTO GRID -----------------------*/	
+.photo-gallery {
+	max-width: fit-content;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+	margin: 40px;
+}
+
+.grid-photo img {
+	width: 100%;
+    height: auto; 
+	}
+/* FOOTER -----------------------*/	
+footer {
+	background-color: #FA8072;
+	color: #ffffff;
+	font-size: 85%;
+	text-align: center;
+	font-family: arial;
+	padding: 2em 2em 2em 2em;
+	}
+	
+footer a:link {
+ color: #ffffff;
+}
+
+footer a:visited {
+  color: #FFFFFF;
+}
