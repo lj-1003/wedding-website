@@ -65,6 +65,21 @@ main {
 	width: 100%;
     height: auto; 
 	}
+/* Q&A Paragraph -----------------------*/	
+.qa-paragraph {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    margin: 10px;
+	place-items: center;
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+  }
+.qa-section img {
+	width: 70%;
+    height: auto; 
+	}
 /* FOOTER -----------------------*/	
 footer {
 	background-color: #FA8072;
