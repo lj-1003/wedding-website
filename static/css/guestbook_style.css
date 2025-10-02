@@ -25,7 +25,7 @@ textarea {
 }
 
 
-input[type="submit"]{
+.form-buttons{
 	width: 100px;
 	height: 37px;
 	background-color: #21409A;
