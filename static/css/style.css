@@ -42,7 +42,7 @@
 }
 	
 #navigation a:hover {
-	color: #FA8072;
+	color: #fcee85;
 	transition: color .5s ease-out;
 }
 /* MAIN -----------------------*/
@@ -82,8 +82,8 @@ main {
 	}
 /* FOOTER -----------------------*/	
 footer {
-	background-color: #FA8072;
-	color: #ffffff;
+	background-color: #fcee85;
+	color: #000000;
 	font-size: 85%;
 	text-align: center;
 	font-family: arial;
@@ -91,9 +91,9 @@ footer {
 	}
 	
 footer a:link {
- color: #ffffff;
+ color: #000000;
 }
 
 footer a:visited {
-  color: #FFFFFF;
+  color: #000000;
 }
