@@ -1,0 +1,40 @@
+<!--THIS IS NOT READY YET, DON'T COMMIT-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compose</title>
+    <link rel="stylesheet" href="static/css/guestbook_style.css">
+</head>
+<body>
+    <div id="password-form">
+        <div class="fillout">
+            <form method="POST">
+                <label for="content">This page requires a password to continue.</label>
+                <textarea id="secretKey" name="password" required="required" rows="2" cols="30"></textarea><br>
+
+                <button class="form-buttons" type="button" onclick="composeMessage()">Enter</button>
+            </form>
+        </div>
+    </div>
+    <div id="rsvp-form">
+        <h1>RSVP</h1>
+        <div class="fillout">
+            <form method="POST">
+                <label for="content">Name</label>
+                <textarea id="nameInput" name="nameInput" required="required" rows="2" cols="30"></textarea><br>
+
+                <label for="content">Guest</label>
+                <textarea id="guestInput" name="guestInput" required="required" rows="2" cols="30"></textarea><br>
+
+                <button class="form-buttons" type="button" onclick="composeMessage()">Submit</button>
+                <button class="form-buttons"type="button" onclick="resetForm()">Reset Form</button>
+            </form>
+        </div>
+    </div>
+
+    <p id="submitResponse"></p>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+body {
+	background-color: rgb(244, 242, 242);
+}
+
 #logobox {
 	display: flex;
 	height: auto;
@@ -13,10 +17,15 @@
 }
 /* NAVIGATION -----------------------*/
 #navigation {
+	background-color: white;
 	font-family: "Libre Baskerville", serif;
 	font-size: 150%;
 	font-weight: bold;
 	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgb(206, 206, 206);
 }
 	
 #navigation a {
@@ -64,7 +73,13 @@ main {
 .grid-photo img {
 	width: 100%;
     height: auto; 
+	border-radius: 10px;
 	}
+
+.grid-photo img:hover {
+	transform: scale(1.1);
+	transition: transform .25s ease;
+}
 /* Q&A Paragraph -----------------------*/	
 .qa-paragraph {
 	display: grid;
@@ -80,6 +95,54 @@ main {
 	width: 70%;
     height: auto; 
 	}
+
+
+/* Wedding Party Cards -----------------------*/	
+.vip-cards {
+	text-align: center;
+	font-family: "Libre Baskerville", serif;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	transition: transform .25s ease;
+}
+
+.card {
+  /*border: 1px solid rgb(0, 0, 0);*/
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(206, 206, 206);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background-color: white;
+}
+.card .card-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%; /*This would make the image a circle, but my profile picture is already a circle.*/
+  margin-bottom: 10px;
+}
+
+/* QA -----------------------*/	
+.qa-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(206, 206, 206);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+}
+
+
 /* FOOTER -----------------------*/	
 footer {
 	background-color: #fcee85;
@@ -88,6 +151,8 @@ footer {
 	text-align: center;
 	font-family: arial;
 	padding: 2em 2em 2em 2em;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgb(206, 206, 206);
 	}
 	
 footer a:link {
