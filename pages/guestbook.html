@@ -22,23 +22,25 @@
             font-family: Arial;
             text-align: center;
         }
-        body ul {
+        ul {
             list-style-type: none;
+            padding-left: 0;
+            margin: 0 auto;
         }
 
     </style>
 </head>
 <body>
-<h1>Guestbook</h1>
+    <h1>Guestbook</h1>
 
-<div class="compose-button">
-    <a href="../pages/compose.html">
-        <button>Compose a message</button>
-    </a>
-</div>
+    <div class="compose-button">
+        <a href="../pages/compose.html">
+            <button>Compose a message</button>
+        </a>
+    </div>
 
-<div id="feed">
-   
-</div>
+    <ul id=message-list></ul>
+
+    <script type="module" src="../js/guestbook.js"></script>
 </body>
 </html>
