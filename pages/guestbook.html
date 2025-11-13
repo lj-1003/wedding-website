@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/css/guestbook_style.css">
+    <link rel="stylesheet" href="../static/css/guestbook_style.css">
     <title>Guestbook</title>
     <style>
         .compose-button button {
@@ -32,24 +32,13 @@
 <h1>Guestbook</h1>
 
 <div class="compose-button">
-    <a href="/compose.html">
+    <a href="../pages/compose.html">
         <button>Compose a message</button>
     </a>
 </div>
 
 <div id="feed">
-    {% if latest_memo_list %}
-        <ul>
-    {% for memo in latest_memo_list %}
-        <li><strong>{{ memo.name }}</strong> said: "{{ memo.content }}" on {{ memo.pub_date|date:"M d, Y" }}</li><br>
-    {% empty %}
-        <li>No messages yet.</li>
-    {% endfor %}
-</ul>
-
-{% else %}
-    <p>No messages yet.</p>
-{% endif %}
+   
 </div>
 </body>
 </html>
