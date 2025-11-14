@@ -22,6 +22,11 @@ async function composeMessage() {
       messageInput: messageInput,
     }
 
+    if (!nameInput || !messageInput) {
+      alert('Please fill out all required fields!');
+      return;
+    }
+
     if (
       christianMinecraftServer.some(word =>
       nameInput.toLowerCase().includes(word.toLowerCase()) ||
@@ -31,10 +36,10 @@ async function composeMessage() {
       alert("Not on my Christian Minecraft Server!");
       } else {
         console.log(messageData);
+        const savedMessage = await addMessage(messageData)
       }
-      //const savedMessage = await addMessage(messageData)
 
-      //window.location.replace("../pages/guestbook.html");
+      window.location.replace("../pages/guestbook.html");
     }
 
 // Load messages from Firebase and Display in UI
