@@ -2,6 +2,7 @@ function resetForm() {
     location.reload();
 }
 
+import { christianMinecraftServer } from '../js/profanity.js';
 
 //takes functions from firebaseDB.js to be used here. 
 import {
@@ -21,11 +22,20 @@ async function composeMessage() {
       messageInput: messageInput,
     }
 
-    console.log(messageData)
-    const savedMessage = await addMessage(messageData)
+    if (
+      christianMinecraftServer.some(word =>
+      nameInput.toLowerCase().includes(word.toLowerCase()) ||
+      messageInput.toLowerCase().includes(word.toLowerCase())
+      )
+    ) {
+      alert("Not on my Christian Minecraft Server!");
+      } else {
+        console.log(messageData);
+      }
+      //const savedMessage = await addMessage(messageData)
 
-    window.location.replace("../pages/guestbook.html");
-}
+      //window.location.replace("../pages/guestbook.html");
+    }
 
 // Load messages from Firebase and Display in UI
 async function getMessageData() {
