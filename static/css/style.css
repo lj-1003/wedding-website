@@ -16,6 +16,16 @@ body {
 	width: auto;
 	border-radius: 10px;
 }
+
+#homehero img {
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	width: 100%;
+	max-width: 1000px;
+	border-radius: 10px;
+	gap: 2.5%;
+}
 /* NAVIGATION -----------------------*/
 button:hover {
 	transform: scale(1.1);
