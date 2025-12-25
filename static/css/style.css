@@ -12,8 +12,11 @@ body {
 }
 
 .logo {
-	height: 300px;
-	width: auto;
+	/* height: 300px;
+	width: auto; */
+	height: auto;
+	width: 100%;
+	max-height: 300px;
 	border-radius: 10px;
 }
 
@@ -89,6 +92,7 @@ main {
 .grid-photo img {
 	width: 100%;
     height: auto; 
+	max-height: 600px;
 	border-radius: 10px;
 	}
 
@@ -232,4 +236,10 @@ footer a:visited {
 	#navigation:hover .content {
 		display: block;
 	}
+	.photo-gallery {
+	grid-template-columns: repeat(2, 1fr);
+}
+	.vip-gallery {
+	grid-template-columns: repeat(2, 1fr);
+}
 }
