@@ -2,30 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <title>Compose</title>
     <link rel="stylesheet" href="../static/css/guestbook_style.css">
 </head>
+<style>
+    main {
+        text-align: center;
+    }
+</style>
 <body>
     <a href="../pages/guestbook.html">
         <button class="form-buttons">Back to message list</button>
     </a>
-    <h1>Compose a Message</h1>
+    <main>
+        <div class="fillout card">
+            <h1>Compose a Message</h1>
+            <form method="POST">
+                <label for="content">Name</label>
+                <textarea id="nameInput" name="nameInput" required="required" rows="2" cols="30" maxlength="50"></textarea><br>
 
-    <div class="fillout">
-        <form method="POST">
-            <label for="content">Name</label>
-            <textarea id="nameInput" name="nameInput" required="required" rows="2" cols="30"></textarea><br>
+                <label for="content">Share a message with us!</label>
+                <textarea id="messageInput" name="messageInput" required="required" rows="4" cols="30"></textarea><br>
 
-            <label for="content">Share a message with us!</label>
-            <textarea id="messageInput" name="messageInput" required="required" rows="4" cols="30"></textarea><br>
+                <button class="form-buttons" type="button" onclick="composeMessage()">Submit</button>
+                <button class="form-buttons"type="button" onclick="resetForm()">Reset Form</button>
+            </form>
+        </div>
+        <p>Everyone will be able to see what you write, so please be appropriate!<br>
+            Inappropriate or offensive messages are subject to removal.<br>
+            Messages cannot be removed by the user once posted.<br>
+            There is no account system, so you must contact Levi to remove a post. <br><br>
+            To request a message removal, email <a href="support@levieck.com">support@levieck.com</a>
+        </p>
 
-            <button class="form-buttons" type="button" onclick="composeMessage()">Submit</button>
-            <button class="form-buttons"type="button" onclick="resetForm()">Reset Form</button>
-        </form>
-    </div>
-
-    <p id="submitResponse"></p>
+        <p id="submitResponse"></p>
+    </main>
     <script type="module" src="../js/guestbook.js"></script>
 </body>
 </html>

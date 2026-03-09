@@ -14,6 +14,10 @@ import {
 } from "../js/firebaseDB.js"
 
 async function composeMessage() {
+ 
+  const isConfirmed = confirm("Are you sure you want to submit? Once posted, it can only be removed by contacting Levi.");
+  if (isConfirmed) {
+
     const nameInput = document.getElementById("nameInput").value;
     const messageInput = document.getElementById("messageInput").value;
 
@@ -40,7 +44,11 @@ async function composeMessage() {
       }
 
       window.location.replace("../pages/guestbook.html");
+
+    } else {
+      alert("Message cancelled.");
     }
+}
 
 // Load messages from Firebase and Display in UI
 async function getMessageData() {

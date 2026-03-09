@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+body {
+	background-color: rgb(244, 242, 242);
+}
+
 h1 {
 	text-align: center;
 	font-family: "Libre Baskerville", serif;
 }
 
 form {
-	width: 400px;
+	width: 340px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -50,4 +54,14 @@ input[type="submit"]:hover {
 
 #feed {
 	text-align: center;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(206, 206, 206);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
 }
