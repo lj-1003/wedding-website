@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../static/css/guestbook_style.css">
-    <title>Guestbook</title>
+    <title>Message Wall</title>
     <style>
-        body {
+        main {
             font-family: Arial;
             text-align: center;
         }
@@ -18,17 +19,26 @@
 </head>
 <body>
     <header>
+        <a href="../index.html">
+            <button class="form-buttons">Back to main site</button>
+        </a>
     </header>
     <main>
-        <h1>Guestbook</h1>
+        <div>
+            <h1>Message Wall</h1>
+            <p>Everyone will be able to see what you write, so please be appropriate!<br>
+                Inappropriate or offensive messages are subject to removal.</p>
 
-        <div class="compose-button">
-            <a href="../pages/compose.html">
-                <button class="form-buttons">Compose a message</button>
-            </a>
+            <div class="compose-button">
+                <a href="../pages/compose.html">
+                    <button class="form-buttons">Compose a message</button>
+                </a>
+            </div>
+
+            <br><br>
+
+            <ul id=message-list></ul>
         </div>
-
-        <ul id=message-list></ul>
     </main>
     <script type="module" src="../js/guestbook.js"></script>
 </body>

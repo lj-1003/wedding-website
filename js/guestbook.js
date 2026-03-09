@@ -33,7 +33,7 @@ async function composeMessage() {
       messageInput.toLowerCase().includes(word.toLowerCase())
       )
     ) {
-      alert("Not on my Christian Minecraft Server!");
+      alert("Ruh Roh Raggy! You entered something innappropriate, so no Scooby Snacks for you! ");
       } else {
         console.log(messageData);
         const savedMessage = await addMessage(messageData)
