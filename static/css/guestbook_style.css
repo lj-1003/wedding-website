@@ -34,7 +34,6 @@ textarea {
 	padding: 10px;
 }
 
-
 .form-buttons{
 	font-family: "Libre Baskerville", serif;
 	font-size: large;
@@ -97,4 +96,8 @@ ul {
 footer {
 	text-align: center;
 	font-family: arial;
+}
+
+input, textarea, select {
+  font-size: 16px;
 }
