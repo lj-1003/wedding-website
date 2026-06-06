@@ -4,6 +4,12 @@ body {
 	background-color: rgb(244, 242, 242);
 }
 
+main {
+	font-family: Arial;
+    text-align: center;
+    min-height: 85vh;
+}
+
 h1 {
 	text-align: center;
 	font-family: "Libre Baskerville", serif;
@@ -30,11 +36,15 @@ textarea {
 
 
 .form-buttons{
-	width: 100px;
+	font-family: "Libre Baskerville", serif;
+	font-size: large;
+	border-radius: 5px;
+	min-width: 100px;
 	height: 37px;
 	background-color: #fcee85;
 	color: #000000;
 	border: none;
+	margin: 10px 10px 10px 10px;
 }
 
 .form-buttons:hover {
@@ -56,6 +66,12 @@ input[type="submit"]:hover {
 	text-align: center;
 }
 
+ul {
+	list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
 .card {
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(206, 206, 206);
@@ -64,4 +80,21 @@ input[type="submit"]:hover {
   text-align: center;
   display: inline-block;
   background-color: white;
+}
+
+.content-card {
+  overflow-wrap: break-word; 
+  width: 75%;
+  min-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(206, 206, 206);
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+}
+
+footer {
+	text-align: center;
+	font-family: arial;
 }

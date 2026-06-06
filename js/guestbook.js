@@ -15,6 +15,8 @@ import {
 
 async function composeMessage() {
  
+  const date = new Date();
+
   const isConfirmed = confirm("Are you sure you want to submit? Once posted, it can only be removed by contacting Levi.");
   if (isConfirmed) {
 
@@ -24,10 +26,16 @@ async function composeMessage() {
     const messageData = {
       nameInput: nameInput,
       messageInput: messageInput,
+      createdAt : date
     }
 
     if (!nameInput || !messageInput) {
       alert('Please fill out all required fields!');
+      return;
+    }
+
+    if (nameInput.length > 50 || messageInput.length > 150) {
+      alert("Input is too long.")
       return;
     }
 
@@ -60,10 +68,15 @@ async function getMessageData() {
 
   messages.forEach(message => {
 
-    const li = document.createElement("li");
-    li.textContent = `${message.nameInput}: ${message.messageInput}`;
+    const listName = document.createElement("li");
+    listName.innerHTML = `<span><b>${message.nameInput}</b></span>`;
+    const listMessage = document.createElement("li");
+    listMessage.innerHTML = `${message.messageInput}`;
+    const br = document.createElement("br");
 
-    messageList.appendChild(li);
+    messageList.appendChild(listName);
+    messageList.appendChild(listMessage);
+    messageList.appendChild(br);
     
   });
 }
