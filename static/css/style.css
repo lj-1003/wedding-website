@@ -29,6 +29,17 @@ body {
 	border-radius: 10px;
 	gap: 2.5%;
 }
+.standard-buttons{
+	font-family: "Libre Baskerville", serif;
+	font-size: large;
+	border-radius: 5px;
+	width: 100px;
+	height: 37px;
+	background-color: #fcee85;
+	color: #000000;
+	border: none;
+	margin: 10px 10px 10px 10px;
+}
 /* NAVIGATION -----------------------*/
 button:hover {
 	transform: scale(1.1);

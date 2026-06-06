@@ -12,7 +12,10 @@
                 text-align: center;
 				font-family: "Libre Baskerville", serif;
             }
-    
+			#registry-section {
+				display: flex;
+				justify-content: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -30,13 +33,22 @@
 						<li><a href="../pages/guestbook.html">Message Wall</a></li><br>
 						<li><a href="../pages/vip.html">Wedding Party</a></li><br>
 						<li><a href="../pages/qa.html">Q&A</a></li><br>
-						<li><a href="../pages/registry.html">Registry</a></li><br>
 					</ul>
 				</div>
 			</div>
 		</header>
-		<main>	
+		<main>
 			<h1 id="days-left"></h1>
+			<hr>
+			<h2>View the Registry</h2>
+			<div id="registry-section">
+				<a href="https://www.target.com/gift-registry/gift-giver?registryId=49315070-218d-11f1-ac3d-e198e22e160e&type=WEDDING" target="_blank">
+					<button class="standard-buttons">Target</button>
+				</a>
+				<a href="https://www.amazon.com/wedding/guest-view/757028HGL3HD" target="_blank">
+					<button class="standard-buttons">Amazon</button>
+				</a>	
+			</div>
             <div id="homehero">
 				<img src="images/homepic.jpg" alt="">
 			</div>
