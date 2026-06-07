@@ -20,7 +20,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore (app);
 
-  //Add a rsvp
+  //Add a Post
 export async function addMessage(messageData) {
     try {
         const docRef = await addDoc (collection(db, "messages"), messageData);
@@ -30,7 +30,7 @@ export async function addMessage(messageData) {
     }
 }
 
-//Get RSVPS
+//Get Posts
 export async function getMessage() {
     const messages = [];
     try {
@@ -47,4 +47,15 @@ export async function getMessage() {
         console.error("error retrieving messages: ", error);
     }
     return messages; 
+}
+
+//Delete Post
+export async function deleteMessage(id) {
+    try {
+        await deleteDoc(doc(db, "messages", id));
+    }   catch (error)
+     {
+        console.error("error deleting messages: ", error);
+    }
+    console.log("Deleted message from Firebase");
 }

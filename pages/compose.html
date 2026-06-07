@@ -15,21 +15,21 @@
         <div class="fillout card">
             <h1>Compose a Message</h1>
             <form method="POST">
-                <label for="content">Name</label>
+                <label for="content">Create a password*<br>Used to delete post later.</label>
+                <textarea type="code" id="codeInput" name="codeInput" required="required" rows="2" cols="" maxlength="50"></textarea><br>
+
+                <label for="content">Name*</label>
                 <textarea id="nameInput" name="nameInput" required="required" rows="2" cols="30" maxlength="50"></textarea><br>
 
-                <label for="content">Share a message with us!</label>
+                <label for="content">Share a message with us!*</label>
                 <textarea id="messageInput" name="messageInput" required="required" rows="4" cols="30" maxlength="150"></textarea><br>
 
                 <button class="form-buttons" type="button" onclick="composeMessage()">Submit</button>
                 <button class="form-buttons"type="button" onclick="resetForm()">Reset Form</button>
             </form>
         </div>
-        <p>Everyone will be able to see what you write, so please be appropriate!<br>
-            Inappropriate or offensive messages are subject to removal.<br>
-            Messages cannot be removed by the user once posted.<br>
-            There is no account system, so you must contact Levi to remove a post. <br><br>
-            To request a message removal, email <a href="support@levieck.com">support@levieck.com</a>
+        <p>Inappropriate posts are subject to removal.<br>
+            <br>Issues can be emailed to <a href="support@levieck.com">support@levieck.com</a>.
         </p>
 
         <p id="submitResponse"></p>

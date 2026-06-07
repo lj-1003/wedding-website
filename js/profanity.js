@@ -1,3 +1,4 @@
+// Had ChatGPT make a profanity list to use as a filter. Sorry Jesus.
 export const christianMinecraftServer = [
   "ass",
   "asshole",
